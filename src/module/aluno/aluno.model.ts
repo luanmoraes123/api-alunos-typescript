@@ -12,6 +12,6 @@ export default class Aluno{
    }
 
    store = (params: Aluno) => {
-    return this.db().insert(params);
+    return this.db('aluno').insert(params);
    }
 }
